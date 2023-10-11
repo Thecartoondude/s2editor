@@ -1,80 +1,871 @@
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scratch Project Editor - Imagine, Program, Share</title>
-        <style>
-            body, html {
-                width: 100%;
-                height: 100%;
-                padding: 0;
-                margin: 0;
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"1c6ed9743c","agent":"js-agent.newrelic.com/nr-686.min.js","transactionName":"M1IHN0NYXEZWAEFRCgoYIxZfWkZcWA0aSBcLXQAARUocQ14GQktfNEUKCVRaRnBTCkFXFzJeABQfXldB","applicationID":"2845391","errorBeacon":"bam.nr-data.net","applicationTime":41}</script>
+     
+    <meta name="google-site-verification" content="m_3TAXDreGTFyoYnEmU9mcKB4Xtw5mw6yRkuJtXRKxM"/>
+    <title>Scratch Project Editor - Imagine, Program, Share</title>
+    
+
+<meta name="robots" content="noindex"/>
+
+<meta name="description" content=" on Scratch by "/>
+
+
+    <link rel="stylesheet" href="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/vendor/redmond/jquery.ui.all.css"/>
+    
+        <link href="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/css/main.css" rel="stylesheet" type="text/css"/>
+   
+   <link rel="stylesheet" href="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__//css/handheld.css" media="handheld, only screen and (max-device-width:480px)"/>
+
+    
+    
+        <link href="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/css/project_base.css" rel="stylesheet" type="text/css"/>
+    
+    <link href="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__//vendor/redmond/jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__//js/swfobject.js"></script>
+
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__//js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/js/lib/underscore-min.js"></script>
+    
+    <script>
+      window.console||(window.console={log:$.noop,error:$.noop,debug:$.noop}); // ensure console fails gracefully when missing
+      // define _gaq here to log errors with GA. ga.js script gets loaded furthe down
+      var sessionCookieName = 'scratchsessionsid';
+      var _gaq = window._gaq || [];
+      _gaq.push(['_setAccount', 'UA-30688952-1']);
+      _gaq.push(['_trackPageview']);
+      
+      
+      
+      
+
+      
+    </script>
+    <script type="text/javascript">
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
             }
-            body {
-                background-color: #EEE;
-                overflow-y: hidden;
+            return cookieValue;
+        }
+
+        function setCookie(name, value, days) {
+            var expires;
+
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toGMTString();
+            } else {
+                expires = "";
             }
-            #container {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-            }
-            #downloader {
-                height: 200px;
-                position: relative;
-            }
-            body:not(.download) #downloader { display: none; }
-            #progress {
-                background: rgba(0, 0, 255, 0.5);
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 0;
-                height: 100%;
-                z-index: 0;
-            }
-            #output {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                overflow-y: scroll;
-                margin: 0;
-            }
-            #flash {
-                flex-grow: 1;
-                height: 100%;
-            }
-        </style>
-        <script>
-            window.JSloadID = function(id) {
-                location.hash = id;
-                location.reload();
-            };
-            window.JSwillDownload = function() {
-                return location.hash.length > 1;
-            };
-        </script>
-    </head>
-    <body>
-        <div id="container">
-            <div id="downloader">
-                <div id="progress"></div>
-                <pre id="output"><code id="log"></code></pre>
-            </div>
-            <div id="flash">
-                <object width='100%' height='100%' id='scratch'>
-                    <param name='allowscriptaccess' value='always'>
-                    <embed src='swfs/editor/Scratch.swf' width='100%' height='100%'>
-                </object>
-            </div>
+            document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+        }
+    </script>
+    
+<script>
+    
+
+var Scratch = Scratch || {};
+Scratch.INIT_DATA = Scratch.INIT_DATA || {};
+
+
+
+Scratch.INIT_DATA.ADMIN = false;
+Scratch.INIT_DATA.LOGGED_IN_USER = {
+  
+  options: {
+     
+    
+
+permissions: [
+    
+]
+
+  }
+};
+Scratch.INIT_DATA.comment_posting = true;
+
+Scratch.INIT_DATA.BROWSERS_SUPPORTED = {
+
+  chrome: 35,
+  firefox: 31,
+  msie: 8,
+  safari: 7
+};
+
+Scratch.INIT_DATA.TEMPLATE_CUES = {
+
+  unsupported_browser: true,
+  welcome: true,
+  confirmed_email: false
+};
+  
+
+
+
+
+Scratch.INIT_DATA.PROJECT = {
+  
+  model: {
+    id: null,
+    creator: null,
+    title: 'Untitled',
+    isPrivate: true
+  },
+  is_new: true
+
+  
+}
+
+Scratch.INIT_DATA.HAS_NEVER_REMIXED = false;
+
+Scratch.INIT_DATA.TIPS = {
+  HELP_URLS : {
+    
+      'en': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/en/",
+    
+      'an': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/an/",
+    
+      'ast': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ast/",
+    
+      'id': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/id/",
+    
+      'ms': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ms/",
+    
+      'ca': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ca/",
+    
+      'cs': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/cs/",
+    
+      'cy': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/cy/",
+    
+      'da': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/da/",
+    
+      'fa-af': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/fa-af/",
+    
+      'de': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/de/",
+    
+      'yum': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/yum/",
+    
+      'et': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/et/",
+    
+      'eo': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/eo/",
+    
+      'es': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/es/",
+    
+      'eu': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/eu/",
+    
+      'fr': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/fr/",
+    
+      'fr-ca': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/fr-ca/",
+    
+      'ga': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ga/",
+    
+      'gd': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/gd/",
+    
+      'gl': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/gl/",
+    
+      'hr': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/hr/",
+    
+      'is': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/is/",
+    
+      'it': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/it/",
+    
+      'rw': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/rw/",
+    
+      'ku': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ku/",
+    
+      'la': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/la/",
+    
+      'lv': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/lv/",
+    
+      'lt': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/lt/",
+    
+      'hu': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/hu/",
+    
+      'mt': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/mt/",
+    
+      'cat': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/cat/",
+    
+      'nl': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/nl/",
+    
+      'nb': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/nb/",
+    
+      'pl': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/pl/",
+    
+      'pt': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/pt/",
+    
+      'pt-br': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/pt-br/",
+    
+      'ro': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ro/",
+    
+      'sc': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/sc/",
+    
+      'sk': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/sk/",
+    
+      'sl': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/sl/",
+    
+      'fi': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/fi/",
+    
+      'sv': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/sv/",
+    
+      'nai': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/nai/",
+    
+      'vi': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/vi/",
+    
+      'tr': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/tr/",
+    
+      'ab': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ab/",
+    
+      'ar': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ar/",
+    
+      'bg': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/bg/",
+    
+      'el': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/el/",
+    
+      'fa': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/fa/",
+    
+      'he': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/he/",
+    
+      'hi': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/hi/",
+    
+      'hy': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/hy/",
+    
+      'ja': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ja/",
+    
+      'ja-hr': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ja-hr/",
+    
+      'km': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/km/",
+    
+      'kn': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/kn/",
+    
+      'ko': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ko/",
+    
+      'mk': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/mk/",
+    
+      'ml': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ml/",
+    
+      'mn': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/mn/",
+    
+      'mr': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/mr/",
+    
+      'my': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/my/",
+    
+      'ru': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/ru/",
+    
+      'sr': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/sr/",
+    
+      'th': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/th/",
+    
+      'uk': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/uk/",
+    
+      'zh-cn': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/zh-cn/",
+    
+      'zh-tw': "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/help/zh-tw/",
+    
+  },
+
+  CURRENT_LANGUAGE: "en",
+};
+
+
+
+Scratch.INIT_DATA.ADMIN_PANEL = {
+  'adminURL': null,
+};
+
+
+Scratch.INIT_DATA.COI = {
+  TARGET_DOMAIN: "http://cdn.scratch.mit.edu"
+};
+
+
+
+
+Scratch.INIT_DATA.IS_IP_BANNED = false;
+
+Scratch.INIT_DATA.GLOBAL_URLS = {
+  'media_url': 'https://cdn.scratch.mit.edu/static/site/',
+  'static_url': 'https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/',
+  'static_path': 'https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/'
+}
+
+Scratch.INIT_DATA.IS_SOCIAL = false;
+
+Scratch.ALERT_MSGS = {
+  'error': 'Oops! Something went wrong',
+  'inappropriate-generic': 'Hmm...the bad word detector thinks there is a problem with your text. Please change it and remember to <a target="_blank" href="/community_guidelines/">be respectful</a>.',
+  'image-invalid': 'Upload a valid image. The file you uploaded was either not an image or a corrupted image.',
+  'thumbnail-missing': 'Missing file',
+  'thumbnail-upload-bad': 'Bad upload',
+  'thumbnail-too-large': 'Maximum file size is 1 MB.',
+
+  'inappropriate-comment': 'Hmm...the bad word detector thinks there is a problem with your comment. Please change it and remember to <a target="_blank" href="/community_guidelines/">be respectful</a>.',
+  'comment-has-chat-site': 'Uh oh! This comment contains a link to a website with unmoderated chat. For safety reasons, please do not link to these sites!',
+
+  'empty-comment': "You can't post an empty comment!",
+  'delete_comment': '<div title="Delete Comment?"><p>Are you sure you want to delete this comment? If the comment is mean or disrespectful, please click report instead, to let the Scratch Team know about it.</p></div>',
+  'report_comment': '<div title="Report Comment?"></p>Are you sure you want to report this comment?</p></div>',
+  'followed': 'You are now following ',
+  'unfollowed': 'You are no longer following ',
+  'comment-spam': "Hmm, seems like you've posted the same comment a bunch of times. Please don't spam.",
+  'comment-flood': "Woah, seems like you're commenting really quickly. Please wait 30 seconds between posts.",
+  'comment-muted': "Hmm, the filterbot is pretty sure your recent comments weren't ok for Scratch, so your account has been muted for the rest of the day. :/",
+  'comment-unconstructive': "Hmm, the filterbot thinks your comment may be mean or disrespectful. Remember, most projects on Scratch are made by people who are just learning how to program. Read the <a href='/community_guidelines'>community guidelines</a>, and be nice.",
+  'comment-disallowed': "Hmm, it looks like comments have been turned off for this page. :/",
+  'project-complaint-length': "That's too short. Please describe in detail what's inappropriate or disrespectful about the project.",
+  'project-complaint-buglength': "That's too short! Please describe in detail what you expected the project to do, and how exactly it is broken. Thanks!",
+  'editable-text-too-long': "That's too long! Please find a way to shorten your text."
+
+  ,'notes-changed': 'Changes saved',
+  'added-to-studio': 'Added to studio',
+  'tags-changed': 'Changes saved',
+  'tags-limited': 'Limit of 3 tags.',
+  'tags-edit-error': 'Server error when editing tag.  Please reload the page to see updates.',
+  'inappropriate-tag': 'Hmm...the bad word detector thinks there is a problem with your tag. Please change it and remember to <a target="_blank" href="/community_guidelines/">be respectful</a>.'
+
+
+}
+
+
+</script>
+
+
+    <meta property="og:type" content="website"/>
+    
+    <meta property="og:description" content="Make games, stories and interactive art with Scratch. (scratch.mit.edu)"/>
+    
+
+    
+
+
+
+  </head>
+
+  <body class="editor">
+ 
+  <!--[if lte IE 8]>
+  <div class="unsupported-browser banner" data-cue="unsupported_browser">
+    <div class="container">
+      <span>Scratch supports Internet Explorer 9+. We suggest you upgrade to <a href="/info/faq/#requirements">a supported browser</a>, <a href="/scratch2download/">download the offline editor</a>, or <a href="http://wiki.scratch.mit.edu/wiki/List_of_Bug_Workarounds">read about common workarounds</a>.</span>
+    </div>
+  </div>
+  <![endif]-->
+    <div id="pagewrapper">
+      
+      
+      <div id="topnav">
+      <div class="innerwrap">
+        <div class="container">
+          <a href="index.html" class="logo"><span class="scratch"></span></a>
+          <ul class="site-nav">
+            <li><a id="project-create" href="index.html/?tip_bar=home">Create</a></li><li><a href="explore/?date=this_month">Explore</a></li><li><a href="discuss/">Discuss</a></li><li><a href="about/">About</a></li><li class="last"><a href="help/">Help</a></li>
+          </ul>
+            
+            <form class="search" action="search/google_results/" method="get" class="search">
+            <input type="submit" class="glass" value="">
+        
+	<input id="search-input" type="text" placeholder="Search" name="q">
+            
+              
+              <input type="hidden" name="date" value="anytime">
+          <input type="hidden" name="sort_by" value="datetime_shared">
+            
+          </form>
+          
+          <ul class="account-nav"></ul>
+          <script type="text/template" id="template-account-nav-logged-out">
+          <ul class="account-nav" >
+              <li class="join-scratch" data-control="registration"><span class=""><span>Join Scratch</span></span></li><li id="login-dropdown" class="sign-in dropdown"><span data-toggle="dropdown" class="dropdown-toggle"><span>Sign in</span></span><div class="popover bottom dropdown-menu"><div class="arrow"></div><div class="popover-content" ><form method="post" id="login" action="#"><label for="username">Username</label><input type="text" id="login_dropdown_username" name="username" maxlength="30" class="wide username" /><label for="password" class="password">Password</label><input type="password" name="password" class="wide password" /><div class="ajax-loader" style="display:none; float: left;"></div><button type="submit">Sign in</button><span class="forgot-password"><a href="/accounts/password_reset/">Forgot password?</a></span><div class="error"></div></form></div></div></li><li data-control="modal-login" class="sign-in mobile"><span>Sign in</span></li>
+          </ul>
+          </script>
+          <script type="text/template" id="template-account-nav-logged-in">
+          <ul class="account-nav logged-in"><li class="messages"><a title="messages - updates and notices" href="/messages/" class="messages-icon"><span class="notificationsCount none">0</span></a></li><li class="my-stuff"><a title="my stuff - manage projects and studios" href="/mystuff/" class="mystuff-icon"></a></li><li class="logged-in-user dropdown"><span class="user-name dropdown-toggle" data-toggle="dropdown"><img class="user-icon" src="<%= LOGGED_IN_USER.model.thumbnail_url %>" width="24" height="24"><%= LOGGED_IN_USER.model.username_truncated %><span class="caret"></span></span><div class="dropdown-menu blue" ><ul class="user-nav"><li><a href="<%= LOGGED_IN_USER.model.profile_url %>">Profile</a></li><li><a href="/mystuff/">My Stuff</a></li><% if (LOGGED_IN_USER.model.is_educator){ %><li><a href="/educators/classes/">My Classes</a></li><% } %><li><a href="/accounts/settings/">Account settings</a></li><li class="logout divider"><a href="/accounts/logout/?next=/">Sign out</a></li></ul></div></li></ul>
+          </script>
+          <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/js/account-nav.js"></script>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-        <script src="js/standalone-editor.js"></script>
-        <script src="js/json.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+        <iframe class="iframeshim" frameborder="0" scrolling="no"><html><head></head><body></body></html></iframe>
+      </div><!-- innerwrap -->
+      </div>
+        
+
+      <div class="confirm-email banner" data-cue="confirmed_email" style="display:none;">
+        <div class="container">
+          
+          <span><a id="confirm-email-popup" href="#">Confirm your email</a> to enable sharing. <a href="https://scratch.mit.edu/help/faq/#accounts">Having trouble?</a></span>
+          <div class="close">x</div>
+        </div>
+      </div>
+
+        
+        <div class="container" id="content">
+    
+    
+        
+        
+    
+    
+        <div id="alert-view"></div>
+        
+
+
+
+
+
+<div class="showcase" id="project" data-project-id="">
+  <div class="box">
+    <div class="box-head">
+      
+    </div>
+    <div class="box-content">
+      <div class="stage">
+        <div id="player" class="player">
+        
+<!-- Start template projects/editor.html project-swf -->
+  
+  
+
+<!-- Start template project/includes/flash_player_object.html -->
+<div id="scratch-loader"></div>
+<div id="scratch" style="text-align:center;margin-top:30px;visibility:hidden;position:relative;">
+    
+    <div class="scratch_unsupported" style="display: none;">
+        <p style="color:#aaa;font-size:22px;margin-top:14px;line-height:28px;">Oh Noes! Scratch project cannot display.<br/>Flash player is disabled, missing, or less than version 10.2.</p>
+        <a href="http://www.adobe.com/go/getflashplayer">
+            <img src="https://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" target="_blank"/>
+        </a>
+    </div>
+    <div class="scratch_loading">Loading...</div>
+</div>
+
+<script type="text/javascript">
+window.SWFready=$.Deferred(); // Deferred makes sure we don't call ASSetEditMode before SWF is ready.
+function JSeditorReady() {
+    console.log('swfReady');
+    try {
+        SWFready.resolve();
+        return true;
+    } catch (error) {
+        console.error(error.message, "\n", error.stack);
+        throw error;
+    }
+}
+
+function handleEmbedStatus(e) {
+    $('#scratch-loader').hide();
+    if(!e.success) {
+        $('#scratch').css('marginTop', '10');
+        $('#scratch IMG.proj_thumb').css('width', '179px');
+        $('#scratch DIV.scratch_unsupported').show();
+        $('#scratch DIV.scratch_loading').hide();
+    }else{
+        $('#scratch').css('visibility', 'visible');
+    }
+}
+
+// The flashvars tell flash about the project data (and autostart=true)
+var flashvars = {
+    autostart: 'false',
+    server: encodeURIComponent(location.host),
+    cloudToken: '',
+    cdnToken: '95f8025b5d5663c8eca07b96a66ef8d6',
+    urlOverrides: {
+        sitePrefix: "https://web.archive.org/web/20150908015830/http://scratch.mit.edu/",
+        siteCdnPrefix: "https://web.archive.org/web/20150908015830/http://cdn.scratch.mit.edu/",
+        assetPrefix: "https://web.archive.org/web/20150908015830/http://assets.scratch.mit.edu/",
+        assetCdnPrefix: "https://web.archive.org/web/20150908015830/http://cdn.assets.scratch.mit.edu/",
+        projectPrefix: "https://web.archive.org/web/20150908015830/http://projects.scratch.mit.edu/",
+        projectCdnPrefix: "https://web.archive.org/web/20150908015830/http://cdn.projects.scratch.mit.edu/",
+        internalAPI: "internalapi/",
+        siteAPI: "site-api/",
+        staticFiles: "scratchr2/static/"
+    },
+
+    inIE: (navigator.userAgent.indexOf('MSIE') > -1)
+};
+
+$.each(flashvars, function(prop, val) {
+    if($.isPlainObject(val))
+        flashvars[prop] = encodeURIComponent(JSON.stringify(val));
+});
+
+$.each(Scratch.INIT_DATA.PROJECT.model, function(i, val) {
+    if(val != null)
+        flashvars['project_'+i] = encodeURIComponent(val);
+});
+
+if(Scratch.INIT_DATA.PROJECT.is_new)
+    flashvars.project_isNew = true;
+
+var params = {
+    allowscriptaccess: 'always',
+    allowfullscreen: 'true',
+    wmode: 'direct',
+    menu: 'false'};
+
+var swfFile = (swfobject.hasFlashPlayerVersion('11.7.0') ? 'Scratch.swf' : 'ScratchFor10.2.swf');
+
+swfobject.embedSWF("https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/" + swfFile, "scratch", "100%", "100%", "10.2.0",
+    "https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/expressInstall.swf", flashvars, params, null, handleEmbedStatus);
+
+//Dynamically add iframe for registration window
+$.when(window.SWFready).done(function() {$('<iframe id="registration-iframe" class="iframeshim" style="background:#fff;z-index:-1;" frameborder="0" scrolling="no">').insertBefore('#registration')});
+
+// enables the SWF to log errors
+function JSthrowError(e) {
+    if (window.onerror) window.onerror(e, 'swf', 0);
+    else console.error(e);
+}
+</script>
+<!-- End template project/includes/flash_player_object.html -->
+
+
+<!-- End template projects/editor.html project-swf -->
+
+        </div>
+      </div>
+      <div id="info" class="info">
+        
+      </div>
+
+      <div class="actions clearfix">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="humane"><iframe class="iframeshim" frameborder="0" scrolling="no"><html><head></head><body></body></html></iframe></div>
+<div id="tip-bar"></div>
+
+        </div>
+
+
+        
+        
+
+    
+<!-- templates/modal-login.html block -->
+	    <div class="modal hide fade in" id="login-dialog" style="width: 450px">
+        <form method="post" action="login/">
+          <fieldset>
+            <div class="modal-header">
+              <a href="#" data-dismiss="modal" class="close">x
+              </a>
+	      <h3>Sign in</h3>
+            </div>
+            <div class="modal-body">
+            
+              <div class="control-group">
+		      <label class="control-label" for="username">Username
+                </label>
+                <div class="controls">
+                  <input class="username" type="text" name="username" maxlength="30"/>
+                </div>
+              </div>
+              <div class="control-group">
+		            <label class="control-label" for="password">Password
+                </label>
+                <div class="controls">
+                  <input type="password" name="password" class="password"/>
+                </div>
+              </div>
+              
+              <div class="control-group" id="recaptcha_field">
+                <label for="id_recaptcha" class="control-label">Please enter the text below:</label>
+                <script type="text/javascript">
+                    var DjangoRecaptchaOptions = {
+                      "lang": "en"
+                    };
+                    if (typeof RecaptchaOptions !== 'object') {
+                        RecaptchaOptions = DjangoRecaptchaOptions;
+                    } else {
+                        for (key in DjangoRecaptchaOptions) {
+                            RecaptchaOptions[key] = DjangoRecaptchaOptions[key];
+                        }
+                    }
+                </script>
+                <script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6LcznuASAAAAAPwYaDzMirmX6M6PzfGLQG2JqFt7&amp;hl=en"></script>
+                <noscript>
+                  <iframe src="https://www.google.com/recaptcha/api/noscript?k=6LcznuASAAAAAPwYaDzMirmX6M6PzfGLQG2JqFt7&amp;hl=en" height="300" width="500" frameborder="0"></iframe><br/>
+                  <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+                  <input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+                </noscript>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <span class="error">
+              </span>
+              <div class="buttons-right">
+                <button class="button primary" type="submit">Sign in</button> 
+                
+		<a data-control="registration">Or Join Scratch</a>
+                
+              </div>
+            </div>
+           
+          </fieldset>
+        </form>
+        <iframe class="iframeshim" frameborder="0" scrolling="no"><html><head></head><body></body></html></iframe>
+      </div>
+<!-- end templates/modal-login.html -->
+
+    
+        <div id="registration" class="registration modal hide fade" data-backdrop="static">
+          <iframe class="iframeshim" frameborder="0" scrolling="no"><html><head></head><body></body></html></iframe>
+        </div>
+    
+
+    
+    
+
+    
+<div id="remix-modal" class="modal hide fade in">
+
+    <div class="modal-header">
+        <span type="button" class="close" data-dismiss="modal">×</span>
+        <h3>Ready to Remix!</h3>
+    </div>
+
+    <div class="modal-body">
+      <div id="remix-dialog">
+      <p>Add your ideas! You could try:</p>
+      <ul>
+        <li>drawing a new costume</li>
+        <li>changing the scripts</li>
+        <li>creating a new sprite</li>
+      </ul>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <div class="buttons-right">
+        <button class="button primary" type="submit">OK, Got it.</button> 
+      </div>
+    </div>
+    <iframe class="iframeshim" frameborder="0" scrolling="no"><html><head></head><body></body></html></iframe>
+
+</div> <!-- #remix-modal -->
+
+
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__//js/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/js/main.js" charset="utf-8"></script>
+
+  
+  <script type="text/javascript">
+    // load gaq script
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/js/base.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/js/lazyload.js" charset="utf-8"></script>
+    
+    
+
+    
+<script type="text/template" id="template-alert-project-changed">
+    <p>Project was updated  successfully.</p>
+</script>
+
+<script type="text/template" id="template-tip-bar">
+  <div id="tip-bar-inner" class="<%= isOpen ? 'tipsopen' : 'tipsclosed' %>">
+    <div class="tip-header">
+      <span class="tip-icon toggle-control">?</span>
+      <h5>
+        <span class="close-circle-dark">x</span>
+        <span class="tip-ctrl tip-home active">All Tips</span>
+      </h5>
+    </div>
+    <div class="tip-content">
+        <div class="tip-arrow-container">
+            <span class="tip-arrow opentip toggle-control">&#9664;</span>
+        </div>
+        <iframe id="tip-content-container" src="" frameBorder="0"></iframe>
+    </div>
+  </div>
+  <iframe class="iframeshim" frameborder="0" scrolling="no"><html><head></head><body></body></html></iframe>
+</script>
+
+
+
+
+
+<script type="text/template" id="template-collection-count">
+  <%= count %>
+</script>
+
+<script type="text/template" id="template-comment-actions">
+<% if (can_delete) { %>
+  <span data-control="delete" class="actions report">Delete</span>
+<% } %>
+<% if (current_user != comment_user) { %>
+  <span data-control="report" class="actions report">Report</span>
+<% } %>
+</script>
+
+<script type="text/template" id="template-modal-login">
+<div class="modal hide fade in" id="login-dialog" style="width: 450px">
+  <form method="post" action="/login/">
+    <fieldset>
+      <div class="modal-header">
+        <a href="#" data-dismiss="modal" class="close">x
+        </a>
+        <h3>Login</h3>
+      </div>
+      <div class="modal-body">
+        <div class="control-group">
+        <label class="control-label" for="username">Username
+          </label>
+          <div class="controls">
+            <input id="username" type="text" name="username" maxlength="30" />
+          </div>
+        </div>
+        <div class="control-group">
+        <label class="control-label" for="password">Password
+          </label>
+          <div class="controls">
+            <input type="password" name="password" id="password" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="error">
+        </span>
+        <span class="button primary" id="sign-in" data-control="site-login">
+        <span>{% trans "Sign in" $}
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </form>
+</div>
+</script>
+
+<script type="text/template" id="template-comment-reply">
+  <form>
+    <div class="control-group tooltip right">
+      <textarea name="content"></textarea>
+      
+      <span class="hovertext error" data-control="error" data-content="comment-error"><span class="arrow"></span><span class="text"></span></span>
+      <span class="small-text">You have <span id="chars-left-<%= comment_id %>">500</span> characters left.</span>
+    </div>
+    <div class="control-group">
+        <div class="button small" data-parent-thread="<%= thread_id %>" data-commentee-id="<%= commentee_id %>" data-control="modal-login"><a href="#null">Post</a></div>
+        <div class="button small grey" data-control="cancel"><a href="#null">Cancel</a></div>
+      <span class="notification"></span>
+    </div>
+  </form>
+</script>
+
+<script type="text/template" id="template-deletion-canceled">
+<div class="deletion-canceled">
+  <div class="form">
+    <p>
+    Your account was scheduled for deletion but you logged in. Your account has been reactivated. If you didn’t request for your account to be deleted, you should <a href="/accounts/password_change/">change your password</a> to make sure your account is secure. 
+    </p>
+  </div>
+</div>
+</script>
+
+<script type="text/template" id="template-unsupported-browser">
+  <div class="unsupported-browser banner" data-cue="unsupported_browser">
+    <div class="container">
+      <span>Scratch works best on newer browsers. We suggest you upgrade to <a href="/info/faq/#requirements">a supported browser</a>, <a href="/scratch2download/">download the offline editor</a>, <a href="https://web.archive.org/web/20150908015830/http://wiki.scratch.mit.edu/wiki/List_of_Bug_Workarounds">or read about common workarounds</a>.</span>
+      <div class="close">x</div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="template-unsupported-msie">
+  <div class="unsupported-browser banner" data-cue="unsupported_browser">
+    <div class="container">
+      <span>Scratch will stop supporting Internet Explorer 8 on April 30, 2015. We suggest you upgrade to <a href="/info/faq/#requirements">a supported browser</a>, <a href="/scratch2download/">download the offline editor</a>, or <a href="https://web.archive.org/web/20150908015830/http://wiki.scratch.mit.edu/wiki/List_of_Bug_Workarounds">read about common workarounds</a>.</span>
+      <div class="close">x</div>
+    </div>
+  </div>
+</script>
+
+
+<script type="text/template" id="template-project-title">
+  <div id="title" class="editable read inline">
+    <form>
+      <h2><input value="" name="credits"></h2>
+    </form>
+  </div>
+</script>
+<script type="text/template" id="template-report">
+  
+</script>
+
+<script type="text/template" id="template-censor-reshare-dialog">
+<p>
+  Are you sure your project is OK for Scratch? Read the <a href="/community_guidelines" target="_blank">Community Guidelines</a> to be sure.
+</p>
+</script>
+
+
+
+
+
+
+
+    
+
+    <!-- load javascript translation catalog, and javascript fuzzy date library -->
+    <script type="text/javascript" src="https://scratch.mit.edu/jsi18n/"></script>
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/js/lib/jquery.timeago.settings.js"></script>
+
+    
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__//js/apps/registration/main.js"></script>
+    
+
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__//js/apps/global.js"></script>
+    <script>
+      Scratch.NotificationPollTime = 300000;
+    </script>
+
+    
+    <script type="text/javascript">
+      var contentLanguage = "en";
+      var cookieLanguage = getCookie("scratchlanguage");
+
+      if (contentLanguage != cookieLanguage) {
+          setCookie("scratchlanguage", contentLanguage);
+      }
+    </script>
+
+    
+    <script type="text/javascript" src="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/js/project_base.js" charset="utf-8"></script>
+
+
+    
+    <script>
+    $(document).on("accountnavready", function(e){
+        $('#topnav .messages').notificationsAlert();
+    });
+    </script>
+    
+  </body>
+  <!-- Site Version: 2.1.3_2015_09_03_16_17 -->
 </html>
